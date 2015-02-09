@@ -10,8 +10,7 @@ public class Constants {
 
     public static final String LOCK_PATH="/learn/lock";
 
-
-
+    public static final String BARRIER_PATH="/learn/barrier";
 
 
 }
