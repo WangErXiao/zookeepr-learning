@@ -8,5 +8,10 @@ public class Constants {
 
     public static final String LEAD_SPACE="/learn/leader";
 
+    public static final String LOCK_PATH="/learn/lock";
+
+
+
+
 
 }
