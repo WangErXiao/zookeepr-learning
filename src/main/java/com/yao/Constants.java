@@ -12,5 +12,8 @@ public class Constants {
 
     public static final String BARRIER_PATH="/learn/barrier";
 
+    public static final String COUNT_PATH="/learn/counter";
+
+
 
 }
