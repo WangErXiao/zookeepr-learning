@@ -16,7 +16,8 @@ public class Constants {
 
     public static final String CACHE_PATH="/learn/cache";
 
+    public static final String EPHEMERAL_PATH="/learn/ephemeral";
 
-
+    public static final String NODE_PATH="/learn/node";
 
 }
