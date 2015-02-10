@@ -14,6 +14,9 @@ public class Constants {
 
     public static final String COUNT_PATH="/learn/counter";
 
+    public static final String CACHE_PATH="/learn/cache";
+
+
 
 
 }
