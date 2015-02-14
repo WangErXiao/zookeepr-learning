@@ -20,4 +20,7 @@ public class Constants {
 
     public static final String NODE_PATH="/learn/node";
 
+
+    public static final String PROVIDER_NODE_PATH="/learn/provider";
+
 }

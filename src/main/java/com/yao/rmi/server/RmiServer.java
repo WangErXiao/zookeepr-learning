@@ -14,6 +14,5 @@ public class RmiServer {
         String url = "rmi://127.0.0.1:1099/com.yao.rmi.server.HelloServiceImpl";
         LocateRegistry.createRegistry(port);
         Naming.rebind(url, new HelloServiceImpl());
-
     }
 }
