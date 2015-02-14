@@ -13,7 +13,6 @@ import java.rmi.Naming;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -22,14 +21,14 @@ import java.util.concurrent.TimeUnit;
 public class ServiceProvider {
     private static final Logger LOGGER= LoggerFactory.getLogger(ServiceProvider.class);
     private static ServiceProvider provider;
+
+    private CuratorFramework zookeeperClient=null;
     //发布服务
     public void publish(Remote remote,String host,int port){
-       CuratorFramework zookeeperClient=null;
        PersistentEphemeralNode node=null;
        try{
            String url=publishService(remote,host,port);
            if(url!=null){
-                zookeeperClient=connectZookeeper();
                 node=createNode(zookeeperClient,url,remote.getClass().getName());
            }
        }catch (Exception e){
@@ -81,6 +80,7 @@ public class ServiceProvider {
     }
 
     private ServiceProvider(){
+        zookeeperClient=connectZookeeper();
 
     }
     //test

@@ -7,6 +7,6 @@ import java.rmi.RemoteException;
  */
 public class TestDynamic {
     public static void main(String[]args) throws RemoteException {
-        ServiceProvider.getInstance().publish(new HelloServiceImpl1(),"127.0.0.1",1099);
+        ServiceProvider.getInstance().publish(new HelloServiceImpl1(),"127.0.0.1",2099);
     }
 }
